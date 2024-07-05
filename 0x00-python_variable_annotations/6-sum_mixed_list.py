@@ -3,16 +3,10 @@
 sum_mixed_list module
 """
 
-import typing
+from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: typing.Union[int, float]) -> float:
-    """sums all values in a mixed list
-
-    Args:
-        mxd_lst (typing.Union[int, float]): list of ints and floats
-
-    Returns:
-        float: sum of all vlaues
-    """
-    return sum(mxd_lst)
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    '''Computes the sum of a list of integers and floating-point numbers.
+    '''
+    return float(sum(mxd_lst))
